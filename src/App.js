@@ -16,6 +16,7 @@ const App = () => {
     if (!submitData) {
       toast.error("Empty Value", { position: "bottom-right", autoClose: 1000 });
     } else if (isEditing) {
+      setIsEditing(false);
       const newDataList = listData.map((currentItem) => {
         if (currentItem.id === editingID) {
           return {
