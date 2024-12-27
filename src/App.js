@@ -28,8 +28,8 @@ const App = () => {
       });
       setData(newDataList);
       localStorage.setItem("list", JSON.stringify(newDataList));
-      toast.success("Item Edited", {
-        position: "bottom-right",
+      toast.info("Item Edited", {
+        position: "top-right",
         autoClose: 1000,
       });
     } else {
@@ -48,7 +48,7 @@ const App = () => {
     ];
     setData(newListData);
     localStorage.setItem("list", JSON.stringify(newListData));
-    toast.success("Item Added", { position: "bottom-right", autoClose: 1000 });
+    toast.success("Item Added", { position: "top-right", autoClose: 1000 });
   };
 
   const deleteItem = (deleteId) => {
@@ -57,7 +57,7 @@ const App = () => {
     );
     setData(newListData);
     localStorage.setItem("list", JSON.stringify(newListData));
-    toast.error("Item Deleted", { position: "bottom-right", autoClose: 1000 });
+    toast.error("Item Deleted", { position: "top-right", autoClose: 1000 });
   };
 
   const editItem = (editId) => {
@@ -70,7 +70,7 @@ const App = () => {
   const clearItems = () => {
     setData([]);
     localStorage.removeItem("list");
-    toast.error("All Cleared", { position: "bottom-right", autoClose: 1000 });
+    toast.error("All Cleared", { position: "top-right", autoClose: 1000 });
   };
 
   useEffect(() => {
