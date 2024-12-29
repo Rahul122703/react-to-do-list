@@ -81,7 +81,7 @@ const App = () => {
   return (
     <>
       <ToastContainer />
-      <div className="flex flex-col items-center p-2 m-auto mt-[1rem] none123[0.5px] none123gray-500  rounded-xl shadow-2xl bg-white bg-opacity-10 backdrop-blur-lg w-[95vw] max-w-[600px]">
+      <div className="flex flex-col items-center p-2 m-auto mt-[3rem] none123[0.5px] none123gray-500  rounded-xl shadow-2xl bg-white bg-opacity-10 backdrop-blur-lg w-[95vw] max-w-[600px]">
         <form
           className="none123[0.5px] none123gray-500 flex items-center p-4  bg-white rounded-lg shadow-xl bg-opacity-30 backdrop-blur-lg w-full justify-center mb-[1rem]"
           onSubmit={handleSubmit}>
