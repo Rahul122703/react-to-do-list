@@ -10,7 +10,7 @@ const List = ({ listData, deleteItem, editItem }) => {
     );
   }
   return (
-    <div className="flex flex-col items-center  w-full p-4 mt-8 transition bg-white rounded-lg shadow-2xl bg-opacity-10 backdrop-blur-lg hover:bg-white hover:bg-opacity-20 none123-[0.5px] none123-gray-500 h-[60vh] overflow-auto">
+    <div className="flex flex-col items-center  w-full p-4 mt-8 transition bg-white rounded-lg shadow-2xl bg-opacity-10 backdrop-blur-lg hover:bg-white hover:bg-opacity-20 none123-[0.5px] none123-gray-500 h-[55vh] overflow-auto">
       {listData.map((currentItem, index) => {
         const { data, id } = currentItem;
         return (
